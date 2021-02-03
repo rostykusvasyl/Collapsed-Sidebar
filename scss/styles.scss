@@ -1,0 +1,235 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    color: #333;
+}
+
+/*-----section navbar-----*/
+#main-rapper {
+    transition: margin-left .5s;
+}
+#navbar {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    background-color: #e3e3e3;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-brand {
+    text-decoration: none;
+    flex: 0 0 250px;
+    border-right: 2px solid rgba(0, 0, 0, .1);
+    height: 60px;
+    margin: auto;
+    color: rgba(0, 0, 0, .9);
+    p {
+        padding: 0 10px;
+    }
+}
+.navbarNav {
+    flex: 0 1 100%;
+}
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    padding-left: 0;
+    li {
+        border-right: 2px rgba(0, 0, 0, .1) solid;
+        height: 60px;
+        padding: 15px 10px;
+    }
+
+    a {
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: rgba(0, 0, 0, .9);
+        &:hover{
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+.sidebar {
+    list-style: none;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    margin: 0;
+    padding-left: 0;
+    background-color: #444;
+    li {
+        border-bottom: 2px rgba(255, 255, 255, .7) solid;
+        height: 60px;
+        padding: 15px 10px;
+    }
+    a {
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: white;
+        &:hover{
+            color: rgba(0, 0, 0, 0.7);
+        }
+    }
+}
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-right: 2px solid rgba(0, 0, 0, .1);
+    height: 60px;
+    background-color: #999;
+    order: 1;
+    display: none;
+    &:hover {
+        background-color: #444;
+    }
+}
+
+.help {
+    flex: 0 0 auto;
+    height: 60px;
+    border-left: 2px rgba(0, 0, 0, .1) solid;
+    margin: auto;
+    text-decoration: none;
+    p {
+        color: rgba(0, 0, 0, .9);
+        padding: 0 10px;
+    }
+}
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100vh;
+}
+#main {
+    order: 2;
+    background-color: #e3e3e3;
+    flex: 8 1;
+    margin: 5px;
+    text-align: center;
+}
+#block1 {
+    order: 1;
+    flex: 0 0 250px;
+    background-color: #e3e3e3;
+    height: 300px;
+    margin: 5px;
+    display: flex;
+    h2 {
+        margin: auto;
+    }
+}
+
+#block3 {
+    order: 3;
+    background-color: #e3e3e3;
+    flex: 0 0 200px;
+    margin: 5px;
+    display: flex;
+    h2 {
+        margin: auto;
+        padding: 20px 0;
+    }
+}
+.card {
+    display: flex;
+    margin: 10px;
+    background-color: #f3f3f3;
+    height: 85px;
+    .photo {
+        img {
+            height: 85px;
+            width: auto;
+        }
+    }
+    p {
+        font-size: 16px;
+        overflow: hidden;
+        padding: 0 10px;
+    }
+}
+
+@media(min-width: 0) and (max-width: 480px) {}
+@media(min-width: 321px) and (max-width: 480px) {}
+@media(min-width: 481px) and (max-width: 767px) {}
+@media(max-width: 750px) {
+
+    .navbar-brand {
+        flex: 0 1;
+        order: 2;
+        margin: 0;
+        height: 60px;
+        p {
+            margin: 0;
+            padding: 5px 10px;
+        }
+    }
+    .navbarNav {
+        flex: 0 0 auto;
+    }
+    .navbar-nav {
+        display: none;
+    }
+    .help {
+        order: 3;
+        flex: 0 0 auto;
+        height: 60px;
+        margin-right: 0;
+    }
+    .openbtn {
+        display: block;
+        &:hover #mySidebar {
+            width: 250px;
+            margin-left: 250px;
+        }
+    }
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar {
+        li {
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+    #block1 {
+        flex: 1 100%;
+        order: 1;
+        margin: 5px 0;
+    }
+    #main {
+        flex: 1 100%;
+        order: 2;
+        margin: 5px 0;
+    }
+    #block3 {
+        flex: 1 100%;
+        margin: 5px 0;
+    }
+}
+@media(min-width: 992px) and (max-width: 1199px) {}
+@media(min-width: 1200px) {}

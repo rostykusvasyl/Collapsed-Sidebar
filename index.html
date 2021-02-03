@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Test task</title>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+
+    <ul id="mySidebar" class="sidebar">
+      <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
+      <li><a href="#">Menu1</a></li>
+      <li><a href="#">Menu2</a></li>
+      <li><a href="#">Menu3</a></li>
+    </ul>
+    <div id="main-wrapper">
+      <!-- section header -->
+      <header id="home">
+        <nav id="navbar">
+          <a class="navbar-brand" href="#home"><p>Logo big image</p></a>
+          <div class="navbarNav collapse">
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <ul class="navbar-nav">
+              <li><a href="#">Menu1</a></li>
+              <li><a href="#">Menu2</a></li>
+              <li><a href="#">Menu3</a></li>
+            </ul>
+          </div>
+          <a href="#" class="help"><p>Help button</p></a>
+        </nav>
+      </header>
+
+      <div class="wrapper">
+        <!--section main -->
+        <article id="main">
+          <h1>Block 2</h1>
+          <div class="card">
+            <div class="photo"><img src="photo.jpg" alt="face"></div>
+            <p>Dolor distinctio deleniti iure est mollitia Libero voluptates atque ex enim labore. Totam harum quasi nobis sit dicta? Unde officia sequi aperiam omnis sit suscipit Impedit commodi accusantium minima vero mollitia Libero voluptates atque.</p>
+          </div>
+          <div class="card">
+            <div class="photo"><img src="photo.jpg" alt="face"></div>
+            <p></p>
+          </div>
+          <div class="card">
+            <div class="photo"><img src="photo.jpg" alt="face"></div>
+            <p></p>
+          </div>
+          <div class="card">
+            <div class="photo"><img src="photo.jpg" alt="face"></div>
+            <p></p>
+          </div>
+          <div class="text">
+            <h3>Sit pariatur alias tempore recusandae voluptatum exercitationem Blanditiis porro esse quas libero commodi Sapiente distinctio quod aut quas modi, eos? Expedita beatae voluptatibus necessitatibus culpa nulla? Voluptatibus commodi fugiat natus?</h3>
+          </div>
+        </article>
+
+        <!-- section block 1-->
+        <aside id="block1">
+          <h2>Block 1</h2>
+        </aside>
+
+
+        <!--section block 3-->
+        <aside id="block3">
+          <h2>Block 3</h2>
+        </aside>
+
+      </div>
+    </div>
+    <script>
+      function openNav() {
+              document.getElementById("mySidebar").style.width = "250px";
+              document.getElementById("main-wrapper").style.marginLeft = "250px";
+            }
+
+            function closeNav() {
+                    document.getElementById("mySidebar").style.width = "0";
+                    document.getElementById("main-wrapper").style.marginLeft= "0";
+                  }
+    </script>
+  </body>
+</html>
